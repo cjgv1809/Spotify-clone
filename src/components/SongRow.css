@@ -1,0 +1,54 @@
+.songRow {
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.songRow:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.songRow > img {
+  width: 5em;
+  object-fit: contain;
+}
+
+.songRow-info {
+  margin-left: 20px;
+}
+
+.songRow-info > h1 {
+  font-size: 16px;
+}
+
+.songRow-info > p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: gray;
+}
+
+.songRow-album {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .songRow {
+    width: 100%;
+  }
+  .songRow img {
+    width: 4em;
+  }
+  .songRow-info {
+    width: 100%;
+  }
+  .songRow-info h1,
+  .songRow-info p {
+    font-size: small;
+  }
+}

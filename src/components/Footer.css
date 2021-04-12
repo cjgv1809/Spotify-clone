@@ -1,0 +1,117 @@
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  height: 75px;
+  width: 100%;
+  background-color: #282828;
+  padding: 20px;
+  border-top: 1px solid whitesmoke;
+  overflow: hidden;
+}
+
+.footer-left {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
+  overflow: hidden;
+}
+
+.footer-album-logo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  margin-right: 20px;
+  border: 1px solid whitesmoke;
+}
+
+.footer-green {
+  color: #1ed15e;
+}
+
+.footer-song-info > h4 {
+  margin-bottom: 5px;
+  font-size: smaller;
+}
+
+.footer-song-info > p {
+  font-size: smaller;
+}
+
+.footer-center {
+  flex: 0.3;
+  padding: 0 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.footer-icon,
+.footer-green {
+  margin-right: 15px;
+}
+
+.footer-icon:hover,
+.footer-green:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+
+.footer-right {
+  flex: 0.3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.footer-right * .MuiSlider-root {
+  color: green;
+  width: 90%;
+}
+
+.playlist-play-icon,
+.volume-down {
+  margin-top: 25%;
+}
+
+@media screen and (max-width: 650px) {
+  .footer-left {
+    flex: 0.2;
+  }
+  .footer-right {
+    flex: 0.2;
+  }
+  .footer-center {
+    flex: 0.6;
+    padding: 0 25px;
+  }
+  .footer-song-info > h4,
+  .footer-song-info > p {
+    font-size: xx-small;
+  }
+  .footer-album-logo {
+    display: none;
+  }
+  .footer-icon,
+  .footer-green {
+    font-size: large !important;
+  }
+  .playlist-play-icon,
+  .volume-down {
+    font-size: large !important;
+  }
+  .MuiGrid-container {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+  }
+  .footer {
+    padding: 10px;
+  }
+}
