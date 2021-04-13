@@ -5,7 +5,7 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 // pull User back to our App Spotify-clone
 //const redirectUri = "http://localhost:3000/";
-const redirectUri = window.location.origin + "/"; //where are you running your app (local react by default is http://localhost:3000/
+const redirectUri = "https://spotify-clone-4b92f.web.app/"; //where are you running your app (local react by default is http://localhost:3000/
 
 const clientId = "8356dbe6c89a44b19bf20200829971ec"; // clintId you can get at https://developer.spotify.com/dashboard
 

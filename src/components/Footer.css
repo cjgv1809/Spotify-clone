@@ -26,7 +26,8 @@
   width: 60px;
   object-fit: contain;
   margin-right: 20px;
-  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  border: none;
 }
 
 .footer-green {

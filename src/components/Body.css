@@ -17,6 +17,12 @@
   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
   height: 10vw;
   object-fit: contain;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.body-info > img:hover {
+  transform: scale(1.2);
 }
 
 .body-info-text {

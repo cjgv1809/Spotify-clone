@@ -16,6 +16,7 @@
   font-weight: 800;
   color: white;
   text-decoration: none;
+  outline: none;
 }
 
 @media all and (max-width: 500px) {
