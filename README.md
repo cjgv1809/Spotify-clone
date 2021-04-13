@@ -2,6 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Spotify-clone
 
-![Screenshot (15)](https://user-images.githubusercontent.com/57246901/114496263-f256ce00-9bf5-11eb-8684-300eb60bd884.png)
+![Screenshot (17)](https://user-images.githubusercontent.com/57246901/114594506-b3f7f800-9c63-11eb-8b37-cce3b049222d.png)
 
 # Link: https://spotify-clone-4b92f.web.app/
