@@ -1,7 +1,7 @@
 .sidebar-option {
   display: flex;
   align-items: center;
-  color: grey;
+  color: gray;
   cursor: pointer;
   height: 40px;
   transition: 200ms color ease-in;
@@ -21,6 +21,7 @@
   margin-bottom: 10px;
   margin-left: 20px;
   font-size: 14px;
+  font-weight: 550;
 }
 
 .sidebar-option-icon {
