@@ -18,7 +18,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 0;
 }
 
-body {
+.app {
   scrollbar-width: none;
   overflow-x: hidden;
   overflow-y: auto;

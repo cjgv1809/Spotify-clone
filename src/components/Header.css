@@ -1,25 +1,8 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.header-left {
-  background-color: white;
-  min-width: 70px;
-  color: gray;
-  border-radius: 30px;
-  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  padding: 10px;
-  flex: 0.5;
-}
-
-.header-left > input {
-  border: none;
-  width: 100%;
-  overflow: hidden;
-  outline: none;
+  margin-bottom: 30px;
 }
 
 .header-right {

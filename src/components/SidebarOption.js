@@ -18,6 +18,7 @@ const SidebarOption = ({ spotify, id, title, Icon }) => {
       });
     });
   };
+
   return (
     <div className="sidebar-option">
       {Icon && <Icon fontSize="large" className="sidebar-option-icon" />}

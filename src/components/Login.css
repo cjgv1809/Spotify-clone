@@ -2,11 +2,41 @@
   display: grid;
   place-items: center;
   height: 100vh;
-  background-color: black;
+  width: 100%;
+  animation: rainbow 10s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes rainbow {
+  0% {
+    background: linear-gradient(180deg, #fa897b, #191414);
+    transition: 3s ease-in;
+  }
+  20% {
+    background: linear-gradient(180deg, #d3dd18, #191414);
+    transition: 3s ease-in;
+  }
+  40% {
+    background: linear-gradient(180deg, #f8d90f, #191414);
+    transition: 3s ease-in;
+  }
+  60% {
+    background: linear-gradient(180deg, #d0e6a5, #191414);
+    transition: 3s ease-in;
+  }
+  80% {
+    background: linear-gradient(180deg, #0191b4, #191414);
+    transition: 3s ease-in;
+  }
+  100% {
+    background: linear-gradient(180deg, #ccabd8, #191414);
+    transition: 3s ease-in;
+  }
 }
 
 .login img {
   width: 30em;
+  filter: hue-rotate(180deg) invert(1);
 }
 
 .login a {

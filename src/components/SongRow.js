@@ -4,6 +4,7 @@ import "./SongRow.css";
 
 function SongRow({ track, playSong }) {
   const [{}, dispatch] = useDataLayerValue();
+
   const changeTrack = (e, track) => {
     dispatch({
       type: "SET_TRACK",

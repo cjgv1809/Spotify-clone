@@ -6,13 +6,12 @@ import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import SongRow from "./SongRow";
-import { Roll } from "react-reveal";
+import Zoom from "react-reveal/Zoom";
 
 function Body({ spotify }) {
-  const [
-    { current_playlist, tracks, track, discover_weekly },
-    dispatch,
-  ] = useDataLayerValue();
+  const [{ current_playlist, tracks, track, discover_weekly }, dispatch] =
+    useDataLayerValue();
+
   const playPlaylist = (id) => {
     spotify
       .play({
@@ -79,13 +78,9 @@ function Body({ spotify }) {
         </div>
 
         {tracks?.items.map((track) => (
-          <Roll>
-            <SongRow
-              track={track.track}
-              key={track.track.id}
-              playSong={playSong}
-            />
-          </Roll>
+          <Zoom>
+            <SongRow track={track.track} key={track.track.id} />
+          </Zoom>
         ))}
       </div>
     </div>

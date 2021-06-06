@@ -12,7 +12,7 @@ import VolumeDownIcon from "@material-ui/icons/VolumeDown";
 import { useDataLayerValue } from "../DataLayer";
 
 function Footer({ spotify }) {
-  const [{ token, item, playing, track }, dispatch] = useDataLayerValue();
+  const [{ playing, track, user }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     spotify.getMyCurrentPlaybackState().then((r) => {
@@ -110,7 +110,6 @@ function Footer({ spotify }) {
         ) : (
           <PlayCircleOutlineIcon fontSize="large" className="footer-icon" />
         )}
-
         <SkipNextIcon className="footer-icon" />
         <RepeatIcon className="footer-green" />
       </div>
